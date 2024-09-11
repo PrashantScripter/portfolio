@@ -1,0 +1,11 @@
+@tailwind base;
+html{
+    scroll-behavior: smooth;
+}
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @layer font-lato; /* Apply Lato globally */
+}  
