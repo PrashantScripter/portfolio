@@ -9,8 +9,11 @@ const Main: React.FC = () => {
           <h1 className='text-4xl sm:text-6xl font-medium text-sky-400'>Hi, I'm Prashant Thakur</h1>
           <p className='text-slate-400 text-xl'>I'm a passionate <span className='text-pink-400'>Full Stack Developer</span> with experience in building dynamic web applications using technologies like MERN (MongoDB, Express, React, Node.js) and TypeScript. With a strong foundation in JavaScript, C++, Python, and web development frameworks, I thrive on creating efficient, user-friendly, and scalable solutions. I'm currently exploring Next.js and Redux to further enhance my skill set.</p>
           <div className='flex gap-10 items-center'>
-            <a href="mailto:prashantthakurji90@gmail.com" className='border rounded-md border-sky-900 px-4 py-2 text-sky-400 font-bold'>Hire me</a>
-            <div className='flex gap-4'>
+            <div className='flex flex-row gap-2'>
+              <a href="mailto:prashantthakurji90@gmail.com" className='border rounded-md border-sky-900 px-4 py-2 text-sky-400 font-bold'>Hire me</a>
+              <a href="" className='border rounded-md border-sky-900 px-4 py-2 text-sky-400 font-bold'>Resume</a>
+            </div>
+            <div className=' hidden gap-4 lg:flex flex-row'>
               <a href="https://www.linkedin.com/in/thakurprashant7949/">
                 <svg xmlns="http://www.w3.org/2000/svg" className='fill-sky-400 cursor-pointer' height={"30px"} width={"30px"} viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" /></svg>
               </a>
@@ -40,41 +43,43 @@ const Main: React.FC = () => {
         </div>
       </div>
 
-      {/* slills and tecnologies */}
-      <div id='skills' className='w-[90%] mx-auto flex justify-between flex-col-reverse gap-10 sm:gap-0 sm:flex-row  text-slate-400 sm:items-center '>
-        <div className='flex flex-col sm:flex-row gap-2 sm:w-[80%]'>
-          <div className='border rounded-md border-sky-900 sm:w-[50%] p-5'>
-            <p className='text-sky-400 mb-4 text-xl'>Frontend</p>
-            <ul className='flex flex-wrap lg:grid grid-cols-3 gap-3'>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>React</li>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>HTML</li>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>CSS</li>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>Tailwind css</li>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>Typescript</li>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>Next.js</li>
-            </ul>
-          </div>
+      {/* skill & projects */}
+      <div id='skills' className=' w-[90%] flex  flex-col items-center md:flex-row mx-auto md:justify-between gap-32 md:gap-0 text-sky-400'>
+        {/* skills */}
+        <div className=' w-full md:w-2/5 flex mx-auto sm:mx-0 flex-col gap-10 items-start  self-start'>
+          <h1 className='text-4xl font-bold text-sky-400 text-center'>Skills</h1>
+          <div className='flex flex-col md:flex-col sm:flex-row gap-2'>
 
-          <div className='border rounded-md border-sky-900 sm:w-[50%] p-5 '>
-            <p className='text-sky-400 mb-4 text-xl'>Backend</p>
-            <ul className='flex flex-wrap lg:grid grid-cols-3 gap-3'>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>Node.js</li>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>Express</li>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>MongoDB</li>
-              <li className='border border-sky-900 p-1 text-center rounded-md'>SQL</li>
-            </ul>
+            <div className='border rounded-md border-sky-900 p-5 lg:max-w-80 max-w-[400px]'>
+              <p className='text-sky-400 mb-4 text-xl'>Frontend</p>
+              <ul className='flex flex-wrap lg:grid grid-cols-3 gap-3'>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>React</li>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>HTML</li>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>CSS</li>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>Tailwind css</li>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>Typescript</li>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>Next.js</li>
+              </ul>
+            </div>
+
+            <div className='border rounded-md border-sky-900 p-5 '>
+              <p className='text-sky-400 mb-4 text-xl'>Backend</p>
+              <ul className='flex flex-wrap lg:grid grid-cols-3 gap-3'>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>Node.js</li>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>Express</li>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>MongoDB</li>
+                <li className='border border-sky-900 p-1 text-center rounded-md'>SQL</li>
+              </ul>
+            </div>
+
           </div>
         </div>
 
-        <h1 className=' w-[100%] sm:w-[40%] text-4xl font-bold text-sky-400 sm:text-right'>Skills</h1>
-      </div>
 
-      {/* Projects */}
-      <div id='projects' className='w-[90%] mx-auto flex justify-between flex-col gap-10 sm:gap-0 sm:flex-row  text-slate-400 sm:items-center'>
-        <h1 className=' w-[100%] sm:w-[30%] text-4xl font-bold text-sky-400'>Projects</h1>
-        <div className='flex flex-col gap-4 justify-end sm:w-[70%] sm:flex-row '>
-
-          <div className='lg:w-1/2 sm:w-3/4 border border-sky-900 rounded-md overflow-hidden'>
+        {/* Projects */}
+        <div id='projects' className='flex mx-auto sm:mx-0 flex-col gap-10  w-full md:w-1/2 lg:w-3/5 self-start'>
+          <h1 className='text-4xl font-bold text-sky-400'>Projects</h1>
+          <div className='border border-sky-900 rounded-md overflow-hidden'>
             <img className='' src="/image.png" alt="" />
             <div className='p-1 overflow-x-scroll xl:overflow-hidden w-full'>
               <ul className=' flex gap-2 p-1 text-sky-400'>
@@ -93,7 +98,9 @@ const Main: React.FC = () => {
 
         </div>
       </div>
+
     </div>
+
   )
 }
 
