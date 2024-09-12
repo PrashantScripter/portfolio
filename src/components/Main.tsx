@@ -2,7 +2,7 @@ import React from 'react'
 
 const Main: React.FC = () => {
   return (
-    <div className='flex flex-col gap-32 py-10'>
+    <div className='flex flex-col gap-32 py-10 h-full'>
       {/* about */}
       <div id='about' className='flex flex-col gap-10 mx-auto w-[90%] lg:flex lg:flex-row lg:gap-0 lg:items-center'>
         <div className='flex flex-col gap-6 lg:w-[60%]'>
@@ -11,7 +11,7 @@ const Main: React.FC = () => {
           <div className='flex gap-10 items-center'>
             <div className='flex flex-row gap-2'>
               <a href="mailto:prashantthakurji90@gmail.com" className='border rounded-md border-sky-900 px-4 py-2 text-sky-400 font-bold'>Hire me</a>
-              <a href="" className='border rounded-md border-sky-900 px-4 py-2 text-sky-400 font-bold'>Resume</a>
+              <a href={`/Prashantthakur.pdf`} target='_blank' className='border rounded-md border-sky-900 px-4 py-2 text-sky-400 font-bold' rel="noopener noreferrer">Resume</a>
             </div>
             <div className=' hidden gap-4 lg:flex flex-row'>
               <a href="https://www.linkedin.com/in/thakurprashant7949/">
